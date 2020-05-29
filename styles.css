@@ -1,0 +1,102 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+            
+            .taskbar {
+            background-color: #6510a1;
+            height: 30px;
+            }
+
+            .titleblock {
+              background-color: #ff7400;
+              height: 60px;
+            }
+
+    
+         .pageone img{ 
+            width: 100%;
+            height: 100%;
+            object-fit: cover;}
+           
+            .name {
+                font-size: 25px;
+                font-family: 'Chelsea Market', cursive;
+                text-align: center;
+            }
+            
+
+            .orange {
+             background-color: #ff7400;
+             height:600px;
+                }
+
+            .wand{
+                height:60px;
+                margin-top: 20px
+            }
+        
+            .snackbox{
+                background-color: #270042;
+                height: 100px;
+                margin-left: 20px;
+                margin-top:20px;
+            }
+            
+            .red {
+                background-color: darkred;
+                height:400px;
+            }
+            
+            .pink{
+                background-color: palevioletred;
+            }
+            
+        /* xs devices */
+        body { background-color: red }
+
+            
+        /* sm devices */
+        @media (min-width: 576px) {
+        body { background-color: orange }
+        }
+            
+        /* md devices */
+        @media (min-width: 768px) {
+        body { background-color: yellow }
+            
+            .green{
+                height: 250px;
+            }
+            
+            .red{
+                height:600px;
+            }
+            .grey{
+                height:200px;
+            }
+    
+        }
+            
+        /* lg devices */
+        @media (min-width: 992px) {
+        body { background-color: green }
+            
+            .green{
+                height: 1200px;}
+            
+            .red {
+                height: 1200px;
+            }
+            
+            .blue {
+                height: 60px;
+            }
+                
+        }
+
+            
+        /* xl devices */
+        @media (min-width: 1200px) {
+        body { background-color: blue }
+        
