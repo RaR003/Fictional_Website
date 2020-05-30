@@ -1,4 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
 
+
+html, body {
+height:100%;
+width:100%;
+font-family: 'Chelsea Market', cursive, sans-serif;
+}
+
+.navbar{
+    padding: .8rem;
+}
+
+.navbar-nav li{
+    padding-right:20px;
+}
+
+.nav-link {
+    font-size:1em; 
+}
+
+.carousel-inner img{
+    width 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-caption h1{
+    text-shadow: 1px 1px 15px #270042;
+    font-size: 15vw;
+}
+
+
+.advert{
+    background-color: #ff7400;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--
 
   @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
 
@@ -13,18 +75,22 @@
               height: 60px;
             }
 
-    
-         .pageone img{ 
-            width: 100%;
-            height: 100%;
-            object-fit: cover;}
-           
             .name {
-                font-size: 25px;
+                font-size: 6vw;
                 font-family: 'Chelsea Market', cursive;
                 text-align: center;
             }
             
+            .pageone{
+              border:  #6510a1 10px solid;
+                }
+    
+             .pageone img { 
+                width: 100%;
+                height: 100%;
+                object-fit: cover
+               ;}
+
 
             .orange {
              background-color: #ff7400;
@@ -32,8 +98,9 @@
                 }
 
             .wand{
-                height:60px;
-                margin-top: 20px
+                height:80px;
+                width: 150px;
+                margin:10px;
             }
         
             .snackbox{
@@ -52,6 +119,8 @@
                 background-color: palevioletred;
             }
             
+
+
         /* xs devices */
         body { background-color: red }
 
@@ -92,6 +161,10 @@
             .blue {
                 height: 60px;
             }
+            
+            .titleblock{
+             height: 100px;
+            }
                 
         }
 
@@ -99,4 +172,8 @@
         /* xl devices */
         @media (min-width: 1200px) {
         body { background-color: blue }
+            
+            .titleblock{
+                height: 150px;
+            }
         
