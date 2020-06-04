@@ -5,6 +5,7 @@ html, body {
 height:100%;
 width:100%;
 font-family: 'Chelsea Market', cursive, sans-serif;
+background-color: #ac73d4;
 }
 
 .navbar{
@@ -19,23 +20,20 @@ font-family: 'Chelsea Market', cursive, sans-serif;
     font-size:1em; 
 }
 
-.carousel-inner img{
-    width 100%;
+.titleimage img{
     height: 100%;
-    object-fit: cover;
-    
+    width:100%;
 }
 
 
 .carousel-caption{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 15%;
 }
 
 .carousel-caption h1{
     text-shadow: 1px 1px 15px #270042;
-    font-size: 15vw;
+    font-size: 800%;
 }
 
 
@@ -45,90 +43,101 @@ font-family: 'Chelsea Market', cursive, sans-serif;
 }
 
 
+.padding{
+    padding-bottom:2rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--
-
-  @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
-
-            
-            .taskbar {
-            background-color: #6510a1;
-            height: 30px;
-            }
-
-            .titleblock {
-              background-color: #ff7400;
-              height: 60px;
-            }
-
-            .name {
-                font-size: 6vw;
-                font-family: 'Chelsea Market', cursive;
-                text-align: center;
-            }
-            
-            .pageone{
-              border:  #6510a1 10px solid;
-                }
+.welcome{
+    width:75%;
+    margin: 0 auto;
+    padding-top: 2rem;
     
-             .pageone img { 
-                width: 100%;
-                height: 100%;
-                object-fit: cover
-               ;}
+}
+
+.welcome hr {
+    border-top: 2px solid #ff7400;
+    width: 95%;
+    margin-top .3rem;
+    margin-bottom: 1rem;
+}
+
+.muggle{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.magic{
+max-width: 100%;
+}
+
+/*---more magic background---*/
+
+figure{
+    position: relative;
+    width: 100%;
+    height:30%;
+    margin:0;
+}
+
+.fixed-wrap{
+    clip: rect(0,auto, auto, 0);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+#fixed {
+    background-image: url(img/Stairs_close.jpg);
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    background-position:center;
+}
+
+[class*="col-"]{
+    padding: : 1rem;
+}
 
 
-            .orange {
-             background-color: #ff7400;
-             height:600px;
-                }
 
-            .wand{
-                height:80px;
-                width: 150px;
-                margin:10px;
-            }
-        
-            .snackbox{
-                background-color: #270042;
-                height: 100px;
-                margin-left: 20px;
-                margin-top:20px;
-            }
-            
-            .red {
-                background-color: darkred;
-                height:400px;
-            }
-            
-            .pink{
-                background-color: palevioletred;
-            }
-            
-
-
-        /* xs devices */
+/* xs devices */
         body { background-color: red }
+
+        .carousel-caption{
+          position: absolute;
+              top: 5%; }
+              
+         .carousel-caption h1{
+        text-shadow: 1px 1px 15px #270042;
+        font-size: 200%;
+        }   
+
 
             
         /* sm devices */
         @media (min-width: 576px) {
         body { background-color: orange }
+
+            .carousel-caption{
+            top: 15%;
         }
+
+            .carousel-caption h1{
+            text-shadow: 1px 1px 15px #270042;
+            font-size: 500%;
+        }
+            .display-4{
+                font-size: 200%;
+    }
+}
+
+
             
         /* md devices */
         @media (min-width: 768px) {
@@ -140,9 +149,6 @@ font-family: 'Chelsea Market', cursive, sans-serif;
             
             .red{
                 height:600px;
-            }
-            .grey{
-                height:200px;
             }
     
         }
@@ -161,10 +167,6 @@ font-family: 'Chelsea Market', cursive, sans-serif;
             .blue {
                 height: 60px;
             }
-            
-            .titleblock{
-             height: 100px;
-            }
                 
         }
 
@@ -172,8 +174,14 @@ font-family: 'Chelsea Market', cursive, sans-serif;
         /* xl devices */
         @media (min-width: 1200px) {
         body { background-color: blue }
-            
-            .titleblock{
-                height: 150px;
-            }
-        
+        }
+      
+
+
+
+
+
+
+
+
+ 
