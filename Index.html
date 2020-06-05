@@ -5,9 +5,13 @@
         <meta charset="utf-8" />
         <title>Weasley's Wizzard Wheezes</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        
+          <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+          <!-- CSS -->
         <link rel="stylesheet" href="styles.css" />
-         <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+       
     </head>
 
     <body>
@@ -15,8 +19,7 @@
         
         <!--Navigation -->
         
-        <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#900000;""sticky-top">
-        <div class="container-fluid">
+         <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color:#900000;">
             <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                <span class="navbar-toggler-icon"></span>    
@@ -41,64 +44,68 @@
                     </li>
                 </ul>
             </div>
-            
-       </div>
+        
         </nav>
+         
+         
         
         <!--Main Image-->
-
+        
+        
           <div class="titleimage">
               <div class="row image">
                   <div class="col-12">
-            <img src="img/main%20image.png">
-          </div>
-            <div class="carousel-caption">
-              <h1>Weasleys Wizard Wheezes</h1>
+                      <img src="img/main%20image.png">
+                  </div>
+                  <div class="carousel-caption">
+                      <h1>Weasleys Wizard Wheezes</h1>
+                  </div>
               </div>
-              </div>
-         </div>
+            </div>
+      
 
         <!--Skiving Snackbox words -->
-        <div class="container-fluid padding">
-        <div class="row welcome text-center">
+        
+        <div class="container-fluid">
+        <div class="row snackbox text-center">
             <div class= "col-12">
-             <h1 class="display 4">Skiving Snackboxes</h1>
+             <h1 class="skiving">Skiving Snackboxes</h1>
             </div>
             <hr>
             <div class="col-12">
-            <p class="lead">Double ended colour coded range of sweets that make you sick </p>
+            <p class="lead">Double ended, colour coded range of sweets that make you sick </p>
+                <p>(but not seriously)</p>
             </div>
             </div>
-        
         </div>
         
         
         <!--Skiving Snackboxes -->
         <div class="container-fluid padding">
-         <div class="row text-center padding">
+         <div class="row snackimg text-center padding">
              
               <div class="col-12 col-sm-6 col-md-3">
-                <i class="fas fa-head-side-virus"></i>
+                <img src="img/fainting.png">
                 <h3>Fainting Fancies</h3>
-                <p></p>
+                <p>2 Gallons each</p>
              </div>
          
                <div class="col-12 col-sm-6 col-md-3">
-                <i class="fas fa-head-side-cough"></i>
-                <h3>Puking Pasties</h3>
-                <p></p>
+                <img src="img/puking.png">
+                <h3>Puking Pastilles</h3>
+                <p>2 gallons each</p>
              </div>
              
-                <div class="col-12 col-sm-6 col-md-3">
-                <i class="fas fa-thermometer-full"></i>
+                <div class="fudge col-12 col-sm-6 col-md-3">
+                <img src="img/fever%20fudge.png">
                 <h3>Fever Fudge</h3>
-                <p></p>
+                <p>2 gallons each</p>
              </div>
         
                <div class="col-12 col-sm-6 col-md-3">
-                <i class="fas fa-box-tissue"></i>
+                <img src="img/Nougat.png">
                 <h3>Nosebleed Nougat</h3>
-                <p></p>
+                <p>2 Gallons each</p>
              </div>
              
             </div>
@@ -123,7 +130,7 @@
         <div class="row padding">
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="img/decoy.png">
+                    <img class="card-img-top" src="img/decoy2.png">
                     <div class="card-body">
                         <h4 class="card-title">Decoy Detonators</h4>
                         <p class="card-text">5 Gallons</p>
@@ -133,10 +140,11 @@
             
              <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="img/wand.png">
+                    <img class="card-img-top" src="img/wand2.jpg">
                     <div class="card-body">
                         <h4 class="card-title">Fake Wands</h4>
-                        <p class="card-text">3 Gallons</p>
+                        <p class="card-text">3 Gallons
+                        </p>
                     </div>
                 </div>
             </div>
@@ -242,12 +250,20 @@
                 <p>Sunday: Closed</p>    
                 </div>
                 <div class="col-12">
-                 <hr class="light"
-                </div>
+                 <hr class="light">
+    
             </div>
-          </div>
+            </div>
+            </div>
         </footer>
         
+        
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
     
 </html>

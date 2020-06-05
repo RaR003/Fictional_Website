@@ -47,19 +47,30 @@ background-color: #ac73d4;
     padding-bottom:2rem;
 }
 
-.welcome{
-    width:75%;
-    margin: 0 auto;
-    padding-top: 2rem;
-    
+.snackbox{
+    background-color:#ff7400;
 }
 
-.welcome hr {
-    border-top: 2px solid #ff7400;
-    width: 95%;
+.snackbox hr {
+    border-top: 2px solid #6510a1;
+    width: 50%;
     margin-top .3rem;
     margin-bottom: 1rem;
 }
+
+.skiving{
+    color: #6510a1;
+    font-size: 10vw
+}
+
+.snackimg{
+    background-color:#ff7400; 
+}
+.snackimg img{
+    max-width: 100%;
+}
+
+
 
 .muggle{
     width: 100%;
@@ -100,22 +111,17 @@ figure{
     background-position:center;
 }
 
-[class*="col-"]{
-    padding: : 1rem;
-}
-
-
 
 /* xs devices */
         body { background-color: red }
 
         .carousel-caption{
           position: absolute;
-              top: 5%; }
+              top: 12%; }
               
          .carousel-caption h1{
         text-shadow: 1px 1px 15px #270042;
-        font-size: 200%;
+        font-size: 500%;
         }   
 
 
@@ -150,6 +156,19 @@ figure{
             .red{
                 height:600px;
             }
+            
+            .carousel-caption{
+            top: 15%;
+        }
+
+            .carousel-caption h1{
+            text-shadow: 1px 1px 15px #270042;
+            font-size: 600%;
+        }
+            .display-4{
+                font-size: 400%;
+                text-align: center;
+    }
     
         }
             
@@ -167,6 +186,16 @@ figure{
             .blue {
                 height: 60px;
             }
+            
+            .carousel-caption{
+            top: 20%;
+        }
+
+            .carousel-caption h1{
+            text-shadow: 1px 1px 15px #270042;
+            font-size: 800%;
+        }
+         
                 
         }
 
@@ -174,7 +203,18 @@ figure{
         /* xl devices */
         @media (min-width: 1200px) {
         body { background-color: blue }
+            
+           .carousel-caption{
+            top: 30%;
         }
+
+            .carousel-caption h1{
+            text-shadow: 1px 1px 15px #270042;
+            font-size: 1000%;
+        }
+            
+        }
+
       
 
 
