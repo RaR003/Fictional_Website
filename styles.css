@@ -8,6 +8,8 @@ font-family: 'Chelsea Market', cursive, sans-serif;
 background-color: #ac73d4;
 }
 
+/*---page one---*/
+
 .navbar{
     padding: .8rem;
 }
@@ -36,8 +38,7 @@ background-color: #ac73d4;
     font-size: 800%;
 }
 
-
-
+/*---Snackboxes---*/
 
 .snackbox{
     background-color:#ff7400;
@@ -60,43 +61,6 @@ background-color: #ac73d4;
 }
 .snackimg img{
     max-width: 100%;
-}
-
-
-
-.muggle{
-    width: 100%;
-    color: #270042;
-    background-color: #ff7400;
-    border: 4px solid #270042;
-    height: 50px
-    
-}
-
-#magic{
-    max-width: 100%;
-    background-color:#ff7400;
-    border: 4px solid #270042;
-    }
-
-#magic img {
-    margin-top: 20px;
-    margin-bottom: 20px;  
-}
-
-.best_sellers{
-    margin-bottom: 20px;
-    padding: 10px;
-    
-}
-
-.contact {
-    padding-top: 40px;
-    text-align: center;
-}
-
-.light{
-    text-align: center;
 }
 
 /*---more magic background---*/
@@ -129,6 +93,59 @@ figure{
     background-position:center;
 }
 
+
+/*---best sellers---*/
+
+.best_sellers{
+    margin-bottom: 20px;
+    padding: 10px;
+    
+}
+
+/*---muggle tricks---*/
+.muggle{
+    width: 100%;
+    color: #270042;
+    background-color: #ff7400;
+    border: 4px solid #270042;
+    height: 50px;
+
+    
+}
+
+#magic{
+    max-width: 100%;
+    background-color:#ff7400;
+    border: 4px solid #270042;
+    }
+
+#magic img {
+    margin-top: 20px;
+    margin-bottom: 20px;  
+}
+
+/*---order now---*/
+
+.contact {
+    margin-top: 20px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #900000
+}
+
+
+/*---footer---*/
+
+.light{
+    text-align: center;
+}
+
+
+
+
+
+/*-------------------Device Changes---------------*/
 
 /* xs devices */
         body { background-color: red }
