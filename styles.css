@@ -2,10 +2,11 @@
 
 
 html, body {
-height:100%;
-width:100%;
-font-family: 'Chelsea Market', cursive, sans-serif;
-background-color: #ac73d4;
+    height:100%;
+    width:100%;
+    font-family: 'Chelsea Market', cursive, sans-serif;
+    background-color: #ac73d4;
+    scroll-behavior: smooth;
 }
 
 /*---page one---*/
@@ -97,8 +98,9 @@ figure{
 /*---best sellers---*/
 
 .best_sellers{
-    margin-bottom: 20px;
+    
     padding: 10px;
+    background-color: #ac73d4;
     
 }
 
@@ -106,7 +108,7 @@ figure{
 .muggle{
     width: 100%;
     color: #270042;
-    background-color: #ff7400;
+    background-color: #6510a1;
     border: 4px solid #270042;
     height: 50px;
 
@@ -115,7 +117,7 @@ figure{
 
 #magic{
     max-width: 100%;
-    background-color:#ff7400;
+    background-color:#270042;
     border: 4px solid #270042;
     }
 
@@ -127,13 +129,13 @@ figure{
 /*---order now---*/
 
 .contact {
-    margin-top: 20px;
-    padding-top:20px;
-    padding-bottom: 20px;
+    
+    padding:20px;
     text-align: center;
     background-color: #900000;
     color: #ff7400;
 }
+
 
 
 /*---footer---*/
@@ -142,7 +144,19 @@ figure{
     text-align: center;
 }
 
+.footer {
+    background-color: #270042;
+    color: #ac73d4;
+}
 
+.footer img{
+    margin-top: 20px;
+}
+
+
+[class*="col-"]{
+    padding: : 1rem;
+}
 
 
 
