@@ -2,17 +2,24 @@
 
 
 html, body {
+    margin:0;
+    padding:0;
     height:100%;
     width:100%;
     font-family: 'Chelsea Market', cursive, sans-serif;
+    scroll-behavior: smooth; 
     background-color: #ac73d4;
-    scroll-behavior: smooth;
+    
 }
 
 /*---page one---*/
 
 .navbar{
-    padding: .8rem;
+    padding: .5rem;
+}
+
+.navbar-brand{
+  Padding-left: 50px;  
 }
 
 .navbar-nav li{
@@ -29,20 +36,59 @@ html, body {
 }
 
 
-.carousel-caption{
+.title{
     position: absolute;
-    top: 15%;
+    top: 40%;
+    text-align: center;
+    padding:100px;
 }
 
-.carousel-caption h1{
+.title h1{
     text-shadow: 1px 1px 15px #270042;
     font-size: 800%;
+    color: white;
 }
+
+/*------backtotop-----*/
+
+scroll {
+    color: #fff;
+    margin-top: 100px;
+}
+
+#toTopBtn {
+    position: fixed;
+    bottom: 26px;
+    right: 39px;
+    z-index: 98;
+    padding: 21px;
+    background-color: hsla(275, 100%, 30%, .7);
+    border: 2px solid #270042;
+}
+
+.cd-top {
+    position: fixed;
+    bottom: 20px;
+    bottom: var(--cd-back-to-top-margin);
+    right: 20px;
+    right: var(--cd-back-to-top-margin);
+    display: inline-block;
+    height: 40px;
+    height: var(--cd-back-to-top-size);
+    width: 40px;
+    width: var(--cd-back-to-top-size);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+    background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
+    background-color: hsla(5, 76%, 62%, .8);
+    background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
+}
+
 
 /*---Snackboxes---*/
 
 .snackbox{
     background-color:#ff7400;
+    color: #270042;
 }
 
 .snackbox hr {
@@ -58,11 +104,14 @@ html, body {
 }
 
 .snackimg{
-    background-color:#ff7400; 
+    background-color:#ff7400;
+    padding-bottom: 50px;
+    color: #270042;
 }
 .snackimg img{
     max-width: 100%;
 }
+
 
 /*---more magic background---*/
 
@@ -97,18 +146,42 @@ figure{
 
 /*---best sellers---*/
 
-.best_sellers{
-    
-    padding: 10px;
-    background-color: #ac73d4;
-    
+
+
+
+.Bestsellers hr {
+    border-top: 2px solid #900000;
+    width: 50%;
+    margin-top .3rem;
+    margin-bottom: 1rem;
 }
+
+
+.display-4{
+    color: #900000;
+}
+
+.best_sellers{
+    padding: 15px;
+    background-color: #ac73d4;
+    color: #900000;
+    text-align: center;
+}
+
+.BS{
+   padding-top:20px;
+    padding-bottom: 20px;
+    color: #900000;
+    text-align: center;
+}
+
+
 
 /*---muggle tricks---*/
 .muggle{
     width: 100%;
     color: #270042;
-    background-color: #6510a1;
+    background-color: #ff7400;
     border: 4px solid #270042;
     height: 50px;
 
@@ -128,15 +201,21 @@ figure{
 
 /*---order now---*/
 
-.contact {
-    
+.order {
     padding:20px;
     text-align: center;
     background-color: #900000;
     color: #ff7400;
 }
 
+.order p {
+    font-size: 1.3rem;
+    padding: 10px;
+}
 
+.map{
+    max-width: 100%;
+}
 
 /*---footer---*/
 
@@ -144,8 +223,12 @@ figure{
     text-align: center;
 }
 
+.light hr{
+    color: #ac73d4;
+}
+
 .footer {
-    background-color: #270042;
+    background-color: #6510a1;
     color: #ac73d4;
 }
 
@@ -154,64 +237,63 @@ figure{
 }
 
 
-[class*="col-"]{
-    padding: : 1rem;
+.work{
+    color:#ff7400;
+    font-size:1.2rem
 }
-
 
 
 /*-------------------Device Changes---------------*/
 
 /* xs devices */
-        body { background-color: red }
 
-        .carousel-caption{
+        .title{
           position: absolute;
-              top: 12%; }
+              top: 8%; }
               
-         .carousel-caption h1{
+         .title h1{
         text-shadow: 1px 1px 15px #270042;
-        font-size: 500%;
+        font-size: 400%;
         }   
+
+         .navbar-brand{
+             padding-left: 10px;
+            }
 
 
             
         /* sm devices */
         @media (min-width: 576px) {
-        body { background-color: orange }
+      
 
-            .carousel-caption{
-            top: 15%;
+            .title{
+            top: 10%;
         }
 
-            .carousel-caption h1{
+            .title h1{
             text-shadow: 1px 1px 15px #270042;
             font-size: 500%;
         }
             .display-4{
                 font-size: 200%;
     }
+             .navbar-brand{
+                padding-left: 20px;
+            }
 }
 
 
             
         /* md devices */
         @media (min-width: 768px) {
-        body { background-color: yellow }
+       
+        
             
-            .green{
-                height: 250px;
-            }
-            
-            .red{
-                height:600px;
-            }
-            
-            .carousel-caption{
-            top: 15%;
+            .title{
+            top: 10%;
         }
 
-            .carousel-caption h1{
+            .title h1{
             text-shadow: 1px 1px 15px #270042;
             font-size: 600%;
         }
@@ -219,32 +301,29 @@ figure{
                 font-size: 400%;
                 text-align: center;
     }
+             .navbar-brand{
+                padding-left: 20px;
+                 
+            }
     
         }
             
         /* lg devices */
         @media (min-width: 992px) {
-        body { background-color: green }
             
-            .green{
-                height: 1200px;}
             
-            .red {
-                height: 1200px;
-            }
-            
-            .blue {
-                height: 60px;
-            }
-            
-            .carousel-caption{
-            top: 20%;
+            .title{
+            top: 15%;
         }
 
-            .carousel-caption h1{
+            .title h1{
             text-shadow: 1px 1px 15px #270042;
             font-size: 800%;
         }
+            
+            .navbar-brand{
+                padding-left: 30px;
+            }
          
                 
         }
@@ -252,13 +331,13 @@ figure{
             
         /* xl devices */
         @media (min-width: 1200px) {
-        body { background-color: blue }
+        
             
-           .carousel-caption{
+           .title{
             top: 30%;
         }
 
-            .carousel-caption h1{
+            .title h1{
             text-shadow: 1px 1px 15px #270042;
             font-size: 1000%;
         }
@@ -266,8 +345,6 @@ figure{
         }
 
       
-
-
 
 
 

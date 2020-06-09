@@ -6,23 +6,46 @@
         <title>Weasley's Wizzard Wheezes</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
+        
           <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!-- JavaScript -->
+        
+         <script>  $(document).ready(function() {
+            $(window).scroll(function() {
+            if ($(this).scrollTop() > 20) {
+            $('#toTopBtn').fadeIn();
+            } else {
+            $('#toTopBtn').fadeOut();
+            }
+            });
+
+            $('#toTopBtn').click(function() {
+            $("html, body").animate({
+            scrollTop: 0
+            }, 1000);
+            return false;
+            });
+            });
+        </script>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
         
           <!-- CSS -->
         <link rel="stylesheet" href="styles.css" />
         
         <!-----lightbox------>
         
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js">   </script>
 
-        <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
         
-        <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
         
-        <script type="text/javascript" src="/fancybox/jquery.easing-1.4.pack.js"></script>
-        
-       
     </head>
 
     <body>
@@ -31,7 +54,7 @@
         <!--Navigation -->
         
          <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color:#900000;">
-            <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+            <a class="navbar-brand"><img src="img/logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                <span class="navbar-toggler-icon"></span>    
             </button>
@@ -39,51 +62,47 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                    <li class="nav-item active">
-                       <a class="nav-link" href="#">Home</a>
+                       <a class="nav-link">Home</a>
                     </li>
                       <li class="nav-item">
-                       <a class="nav-link" href="#snackboxes">Skiving Snackboxes</a>
-                          
+                       <a class="nav-link" href="#snackboxes">Skiving Snackboxes</a>     
                     </li>
                       <li class="nav-item">
-                       <a class="nav-link" href="#row best_sellers">Best Sellers</a>
-                            
+                       <a class="nav-link" href="#best_sellers">Best Sellers</a>     
+                    </li>
+                        <li class="nav-item">
+                       <a class="nav-link" href="#muggle">Muggle tricks</a>  
                     </li>
                       <li class="nav-item">
-                       <a class="nav-link" href="#magic">Muggle tricks</a>
-                            
+                       <a class="nav-link" href="#order">Order</a>
                     </li>
-                      <li class="nav-item">
-                       <a class="nav-link" href="#">Order</a>
-                    </li>
+                    
                 </ul>
             </div>
         
         </nav>
-         
-         
+                
+        <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+
+        
         
         <!--Main Image-->
         
         
           <div class="titleimage">
-              <div class="row image">
-                  <div class="col-12">
-                      <img src="img/main%20image.png">
-                  </div>
-                  <div class="carousel-caption">
-                      <h1>Weasleys Wizard Wheezes</h1>
+            <img src="img/main%20image.png">
+              <div class="title">
+                <h1>Weasleys Wizard Wheezes</h1>
                   </div>
               </div>
-            </div>
-      
-
+    
+        
         <!--Skiving Snackbox words -->
         
         <div class="container-fluid">
         <div class="row snackbox text-center">
             <div class= "col-12">
-             <h1 class="skiving">Skiving Snackboxes</h1>
+             <h1 class="skiving" id="snackboxes">Skiving Snackboxes</h1>
             </div>
             <hr>
             <div class="col-12">
@@ -142,13 +161,13 @@
         
         
         <!-----------Best seller------>
-        <div class="container-fluid padding">
-         <div class="row text center">
+        <div class="container-fluid">
+         <div class="row Bestsellers">
             <div class="col-12">
-              <h1 class="display-4">Best Sellers</h1>
+              <h1 class="display-4" id="best_sellers">Best Sellers</h1>
              </div>
              <hr>
-             
+             <p></p>
         </div>
         </div>
         
@@ -189,8 +208,8 @@
             </div>
             
             
-         <div class="container-fluid padding">
-             <div class="row best_sellers">
+         <div class="container-fluid">
+             <div class="row BS">
             <div class="col-md-4">
                 <div class="card">
                     <img class="card-img-top" src="img/Pygmy.png">
@@ -228,22 +247,22 @@
         <!---collapsed tab--->
         
         
-        <button class="muggle" data-toggle="collapse" data-target="#magic">Muggle tricks</button>
+        <button class="muggle" data-toggle="collapse" data-target="#magic" id="muggle">Muggle Magic</button>
         
         <div class="collapse" id="magic">    
          <div class="container-fluid">
             <div class="row text-center">
               <div class="col-sm-6 col-md-3">
-                <img class="tricks" src="img/Card.jpg">
+                <img class="tricks" src="img/miraphorus.png">
                 </div>
                 <div class="col-sm-6 col-md-3">
-                <img class="tricks" src="img/Levitating%20dollar.jpg">
+                <img class="tricks" src="img/Rabbit.png">
                 </div>
                 <div class="col-sm-6 col-md-3">
-                <img class="tricks" src="img/Magnetic.jpg">
+                <img class="tricks" src="img/haunted.png">
                 </div>
                 <div class="col-sm-6 col-md-3">
-                <img class="tricks" src="img/Spoon.jpg">
+                <img class="tricks" src="img/clock.png">
                 </div>
              </div>
             </div>
@@ -253,22 +272,20 @@
              <!--Contact/map -->
         
         <div class="container-fluid">
-        <div class="row contact">
+        <div class="row order">
             <div class="col-md-12 col-lg-6">
-              <h2>Order now:</h2>
-                 <p class="lead"> </p>
-                
-                <p>Wanting something more than the products in this catalog? Keen to test a few products and see what they can do before you buy? Then come on down to our store next time you are in London. We are located at 93 Diagon Alley.</p>
+              <h2 id="order">Order now:</h2>
+                <p>  Wanting something more than the products in this catalog? Keen to test a few products and see what they can do before you buy? Then come on down to our store next time you are in London. We are located at 93 Diagon Alley.</p>
                 
                 <p>We also run an Owl Order service, just send in the list of products from the catalog and we will aim to send them within 2 working days.</p>
             </div>
             
             <div class="col-12 col-lg-6">
-                <a data-fancybox="gallery" href="img/Diagon%20Alley%201.jpg" class="image-fluid">><img src="img/Diagon%20Alley.jpg"></a>                                    
+               <div class="map"></div> <a data-fancybox="gallery" href="img/Diagon%20Alley%201.jpg" class="image-fluid"><img src="img/Diagon%20Alley.jpg"></a> </div>                                    
             </div>
             </div>
         
-        </div>
+      
        
         <!----Footer------>
         
@@ -292,9 +309,9 @@
                 
                 <div class="col-md-4">
                 <hr class="light">
-                <h5>Need Work?</h5>  
+                <h3 class="work">Need Work?</h3>  
                 <hr class="light">
-               <p> Pocket money failing to keep pace with your out goings?
+               <p class="work"> Pocket money failing to keep pace with your out goings?
                     Like to earn a little extra gold?
                     Contact Weasley's Wizard Wheezes,
                     For simple, part-time, virtually painless jobs.
@@ -308,14 +325,9 @@
             </div>
         </footer>
         
-        
-        <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      
+        <!-----back to top----->
+     
+  
     </body>
     
 </html>
